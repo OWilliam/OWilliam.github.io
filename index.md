@@ -10,7 +10,8 @@ A few months ago, I implemented a NLP system in C++ based on Winograd's seminal 
 is hard, error prone and ultimately leads to brittle systems. More recent NLP work has focussed on recurrent and deep neural network architectures, leading to significant improvements in machine translation and language
 understanding. However, to me it seems that there is something fundamentally missing from the latter approach. It relies on having much data and slowly training the network to discover the minima of its objective function
 whereas much human understanding **does** rely on one-shot, 'aha'-moment learning. We form logical rules, best-guess heuristics, exceptions and categorisations without millions of examples. Maybe the deep-learning
-approach works at the lowest level of feature abstraction while there are more hard-edged, less fuzzy processes occuring higher up? Maybe neural nets will learn how to perform the hard-edged logic if left for long enough?
+approach works at the lowest level of feature abstraction while there are more hard-edged, less fuzzy processes occuring higher up? Maybe neural nets will learn how to perform the hard-edged logic if left for long enough? Maybe
+better selection of training sets is the key: can we train neural networks piece-wise, giving them simple data to optimise one level, then adding more complicated data and more layers only when the simple data has been learned.
 Maybe more investigation is required... and that is the subject of this blog.
 
 As well as waffly philosophical stuff like the above, I'll provide detailed notes on how I've got systems up and running. The primary aim is to provide useful resources to the engineer, although the resources may be
